@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Quantum Movies</title>
-  </head>
-  <body style="font-family: Arial;
-    text-align:centre; margin-top:50px;">
-    <h1> Welcome to Quantum Movies</h1>
-    <p> This is my FREE Website hosted on GITHUB Pages.</p>
-    <p> Created by Amit</p>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Movies</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:#fff;
+}
+header{
+  background:#000;
+  padding:20px;
+  text-align:center;
+}
+nav a{
+  color:#fff;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.hero{
+  background:linear-gradient(to right,#000,#222);
+  padding:60px 20px;
+  text-align:center;
+}
+.hero h1{font-size:40px;}
+.movies{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.movie{
+  background:#222;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+}
+.movie img{
+  width:100%;
+  border-radius:10px;
+}
+footer{
+  background:#000;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
+@media(max-width:600px){
+  .hero h1{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>🎬 Quantum Movies</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Unlimited Movies Collection</h1>
+  <p>Watch, explore & enjoy top movies</p>
+</div>
+
+<section class="movies">
+  <div class="movie">
+    <img src="https://via.placeholder.com/300x450" alt="">
+    <h3>Movie One</h3>
+  </div>
+  <div class="movie">
+    <img src="https://via.placeholder.com/300x450" alt="">
+    <h3>Movie Two</h3>
+  </div>
+  <div class="movie">
+    <img src="https://via.placeholder.com/300x450" alt="">
+    <h3>Movie Three</h3>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Quantum Movies | Free Website</p>
+</footer>
+
+</body>
 </html>
